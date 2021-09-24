@@ -44,10 +44,9 @@
   </prerequisites>
 
   <scm>
-    <connection>scm:git:git@github.com:apache/tomee-patch-plugin.git</connection>
-    <url>scm:git:git@github.com:apache/tomee-patch-plugin.git</url>
-    <developerConnection>scm:git:git@github.com:apache/tomee-patch-plugin.git</developerConnection>
-    <tag>tomee-patch-parent-0.2</tag>
+    <connection>scm:git:git@github.com:tomitribe/tomee-patch-plugin.git</connection>
+    <url>scm:git:git@github.com:tomitribe/tomee-patch-plugin.git</url>
+    <developerConnection>scm:git:git@github.com:tomitribe/tomee-patch-plugin.git</developerConnection>
   </scm>
 
   <issueManagement>
@@ -110,5 +109,19 @@
       </plugin>
     </plugins>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>tomitribe.releases.https</id>
+      <name>Tomitribe Release Distribution Repository</name>
+      <url>https://repository.tomitribe.com/service/local/staging/deploy/maven2</url>
+    </repository>
+
+    <snapshotRepository>
+      <id>tomitribe.snapshots.https</id>
+      <name>Tomitribe Development Snapshot Repository</name>
+      <url>https://repository.tomitribe.com/content/repositories/snapshots-tomitribe</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
 
